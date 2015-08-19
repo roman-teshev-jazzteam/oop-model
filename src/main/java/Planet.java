@@ -70,7 +70,7 @@ public class Planet extends SpaceObject implements Moveble, Destroy {
                 "\n||||||||||Year Time = " + yearTime +
                 "\n||||||||||Rings = " + rings +
                 "\n||||||||||List of Spacecrafts: \n" + getListOfSatellites() +
-                "\n]]]]\n" ;
+                "\n]]]]\n";
     }
 
     public void generateRandomPlanet() {

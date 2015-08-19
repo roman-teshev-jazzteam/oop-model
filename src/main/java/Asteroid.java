@@ -36,7 +36,8 @@ public class Asteroid extends SpaceObject implements Moveble, Destroy {
                 "classOfAsteroid=" + classOfAsteroid +
                 '}';
     }
-    public void generateRandomAsteroid(){
+
+    public void generateRandomAsteroid() {
         Random asteroidRandom = new Random();
         char[] classArray = {'a', 'b', 'c', 'd'};
         int charVar = asteroidRandom.nextInt(3);

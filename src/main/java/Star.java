@@ -40,7 +40,7 @@ public class Star extends SpaceObject implements Moveble, Destroy {
                 "\n|||||power = " + power +
                 "\n|||||temperature = " + temperature +
                 "\n|||||List of Planets: \n" + getListOfSatellites() +
-                "\n]]]\n" ;
+                "\n]]]\n";
     }
 
     public void generateRandomStar() {

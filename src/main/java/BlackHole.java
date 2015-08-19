@@ -41,7 +41,6 @@ public class BlackHole extends SpaceObject implements Moveble, Destroy {
     }
 
 
-
     public void generateRandomBlackHole() {
         Random blackHoleRandom = new Random();
         this.setRadiusOfAttraction(blackHoleRandom.nextDouble());
