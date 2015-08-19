@@ -1,5 +1,4 @@
 public interface Destroy {
-    void toExplode();
+    void toBeDestroyed();
 
-    void toCrash();
 }

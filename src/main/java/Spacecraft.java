@@ -34,13 +34,8 @@ public class Spacecraft extends SpaceObject implements Moveble, Destroy {
 
     }
 
-    public void toExplode() {
-        System.out.println("Spacecraft is Exploded");
-
-    }
-
-    public void toCrash() {
-        System.out.println("Spacecraft is crashed");
+    public void toBeDestroyed() {
+        System.out.println("Spacecraft is destroyed");
 
     }
 

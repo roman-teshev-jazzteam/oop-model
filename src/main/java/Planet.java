@@ -52,13 +52,8 @@ public class Planet extends SpaceObject implements Moveble, Destroy {
 
     }
 
-    public void toExplode() {
-        System.out.println("Planet is eploded");
-
-    }
-
-    public void toCrash() {
-        System.out.println("Planet is crashed");
+    public void toBeDestroyed() {
+        System.out.println("Planet is destroyed");
 
     }
 

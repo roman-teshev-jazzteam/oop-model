@@ -11,13 +11,8 @@ public class BlackHole extends SpaceObject implements Moveble, Destroy {
         this.radiusOfAttraction = radiusOfAttraction;
     }
 
-    public void toExplode() {
-        System.out.println("Black Hole is exploded");
-
-    }
-
-    public void toCrash() {
-        System.out.println("Black Hole is crashed");
+    public void toBeDestroyed() {
+        System.out.println("Black Hole is destroyed");
 
     }
 

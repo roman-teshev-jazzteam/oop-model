@@ -20,13 +20,8 @@ public class Star extends SpaceObject implements Moveble, Destroy {
         this.temperature = temperature;
     }
 
-    public void toExplode() {
-        System.out.println("Star is exploed");
-    }
-
-    public void toCrash() {
-        System.out.println("Star is crashed");
-
+    public void toBeDestroyed() {
+        System.out.println("Star is destroyed");
     }
 
     public void toOrbiting() {

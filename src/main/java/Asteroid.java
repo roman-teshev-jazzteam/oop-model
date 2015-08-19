@@ -12,17 +12,8 @@ public class Asteroid extends SpaceObject implements Moveble, Destroy {
     }
 
 
-    public void toExplode() {
-        System.out.println("Asteroid is exploded");
-    }
-
-    public void toCrash() {
-        System.out.println("Asteroid is crashed");
-
-    }
-
-    public void toBeStable() {
-        System.out.println("Asteroid is stable");
+    public void toBeDestroyed() {
+        System.out.println("Asteroid is destroyed");
     }
 
     public void toOrbiting() {
