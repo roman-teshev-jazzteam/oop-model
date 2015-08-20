@@ -30,7 +30,12 @@ public class Spacecraft extends SpaceObject implements Moveble, Destroy {
     }
 
     public void toOrbiting() {
-        System.out.println("Spacecraft is orbiting");
+        double coordinateX = this.getCoordinateX();
+        double coordinateY = this.getCoordinateY();
+        coordinateX++;
+        coordinateY++;
+        this.setCoordinateX(coordinateX);
+        this.setCoordinateY(coordinateY);
 
     }
 
