@@ -42,5 +42,7 @@ public class Star extends SpaceObject implements Moveble, Destroy {
         Random starRandom = new Random();
         this.setTemperature(starRandom.nextDouble());
         this.setPower(starRandom.nextDouble());
+        this.setCoordinateX(starRandom.nextDouble());
+        this.setCoordinateY(starRandom.nextDouble());
     }
 }

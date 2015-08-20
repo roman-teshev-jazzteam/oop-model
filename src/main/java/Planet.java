@@ -75,5 +75,7 @@ public class Planet extends SpaceObject implements Moveble, Destroy {
         this.setYearTime(planetRandom.nextDouble());
         this.setAthmosphereRadius(planetRandom.nextDouble());
         this.setIsLive(planetRandom.nextBoolean());
+        this.setCoordinateX(planetRandom.nextDouble());
+        this.setCoordinateY(planetRandom.nextDouble());
     }
 }

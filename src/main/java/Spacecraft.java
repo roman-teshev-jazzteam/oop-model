@@ -55,6 +55,8 @@ public class Spacecraft extends SpaceObject implements Moveble, Destroy {
         this.setCompanyFounder(founders[spacecraftRandom.nextInt(3)]);
         this.setCountry(countries[spacecraftRandom.nextInt(3)]);
         this.setYearOfCreation(spacecraftRandom.nextInt(2015));
+        this.setCoordinateX(spacecraftRandom.nextDouble());
+        this.setCoordinateY(spacecraftRandom.nextDouble());
     }
 }
 
