@@ -22,7 +22,7 @@ public class BlackHole extends SpaceObject implements Moveble, Destroy {
 
     @Override
     public String toString() {
-        return "BlackHole\n[[" +
+        return "BlackHole" +
                 "\nName = " + getName() +
                 "\nID = " + getId() +
                 "\nDiameter = " + getDiameter() +
@@ -31,8 +31,7 @@ public class BlackHole extends SpaceObject implements Moveble, Destroy {
                 "\nCoordinateX = " + getCoordinateX() +
                 "\nCoordinateY" + getCoordinateY() +
                 "\nRadius Of Attraction = " + radiusOfAttraction +
-                "\nList of Star Systems: \n" + getListOfSatellites() +
-                "\n]]";
+                "\nList of Star Systems: \n" + getListOfSatellites();
     }
 
 

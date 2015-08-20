@@ -31,11 +31,12 @@ public class Star extends SpaceObject implements Moveble, Destroy {
 
     @Override
     public String toString() {
-        return "\n[[[\n|||||Star" +
-                "\n|||||power = " + power +
-                "\n|||||temperature = " + temperature +
-                "\n|||||List of Planets: \n" + getListOfSatellites() +
-                "\n]]]\n";
+        return "\n          Star" +
+                "\n          power = " + power +
+                "\n          temperature = " + temperature +
+                "\n          Coordinates: " + getCoordinateX() + " / " + getCoordinateY() +
+                "\n          List of Planets: \n" + getListOfSatellites() +
+                "\n";
     }
 
     public void generateRandomStar() {

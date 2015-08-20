@@ -41,11 +41,12 @@ public class Spacecraft extends SpaceObject implements Moveble, Destroy {
 
     @Override
     public String toString() {
-        return "\n[[[[[\n|||||||||||||||Spacecraft" +
-                "\n|||||||||||||||Founder = " + companyFounder +
-                "\n|||||||||||||||Country = " + country +
-                "\n|||||||||||||||Year of Creation = " + yearOfCreation +
-                "\n]]]]]\n";
+        return "\n                              Spacecraft" +
+                "\n                              Founder = " + companyFounder +
+                "\n                              Country = " + country +
+                "\n                              Year of Creation = " + yearOfCreation +
+                "\n                              Coordinates: " + getCoordinateX() + " / " + getCoordinateY() +
+                "\n";
     }
 
     public void generateRandomSpacecraft() {

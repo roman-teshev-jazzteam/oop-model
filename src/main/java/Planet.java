@@ -59,13 +59,14 @@ public class Planet extends SpaceObject implements Moveble, Destroy {
 
     @Override
     public String toString() {
-        return "\n[[[[\n||||||||||Planet" +
-                "\n||||||||||Athmosphere Radius = " + athmosphereRadius +
-                "\n||||||||||Day Time = " + dayTime +
-                "\n||||||||||Year Time = " + yearTime +
-                "\n||||||||||Rings = " + rings +
-                "\n||||||||||List of Spacecrafts: \n" + getListOfSatellites() +
-                "\n]]]]\n";
+        return "\n                    Planet" +
+                "\n                    Athmosphere Radius = " + athmosphereRadius +
+                "\n                    Day Time = " + dayTime +
+                "\n                    Year Time = " + yearTime +
+                "\n                    Rings = " + rings +
+                "\n                    Coordinates: " + getCoordinateX() + " / " + getCoordinateY() +
+                "\n                    List of Spacecrafts: \n" + getListOfSatellites() +
+                "\n";
     }
 
     public void generateRandomPlanet() {
