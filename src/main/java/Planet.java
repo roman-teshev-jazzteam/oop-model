@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Planet extends SpaceObject implements Moveble, Destroy {
+public class Planet extends SpaceObject implements  Destroy {
     private double athmosphereRadius;
     private double dayTime;
     private double yearTime;

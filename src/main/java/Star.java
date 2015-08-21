@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Star extends SpaceObject implements Moveble, Destroy {
+public class Star extends SpaceObject implements Destroy {
     private double power;
     private double temperature;
 

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class BlackHole extends SpaceObject implements Moveble, Destroy {
+public class BlackHole extends SpaceObject implements Destroy {
     private double radiusOfAttraction;
 
     public double getRadiusOfAttraction() {

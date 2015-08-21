@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Asteroid extends SpaceObject implements Moveble, Destroy {
+public class Asteroid extends SpaceObject implements Destroy {
     private char classOfAsteroid;
 
     public char getClassOfAsteroid() {

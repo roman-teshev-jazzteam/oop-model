@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Spacecraft extends SpaceObject implements Moveble, Destroy {
+public class Spacecraft extends SpaceObject implements Destroy {
     private String companyFounder;
     private String country;
     private int yearOfCreation;
