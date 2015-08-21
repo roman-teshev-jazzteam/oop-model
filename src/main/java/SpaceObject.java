@@ -69,6 +69,14 @@ abstract class SpaceObject {
     public ArrayList<SpaceObject> getListOfSatellites() {
         return listOfSatellites;
     }
+    public void toOrbiting() {
+        double coordinateX = this.getCoordinateX();
+        double coordinateY = this.getCoordinateY();
+        coordinateX++;
+        coordinateY++;
+        this.setCoordinateX(coordinateX);
+        this.setCoordinateY(coordinateY);
+    }
 
     public void setListOfSatellites(ArrayList<SpaceObject> listOfSatellites) {
         this.listOfSatellites = listOfSatellites;

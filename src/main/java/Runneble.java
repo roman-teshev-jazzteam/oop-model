@@ -6,15 +6,15 @@ public class Runneble {
     public static final int RANDOM_LIMIT = 10;
 
     public static void main(String[] args) {
-        BlackHole SagittariusA = new BlackHole();
-        SagittariusA.setName("Sagittarius A");
-        SagittariusA.setId("SRGAJ2000.0");
-        SagittariusA.setDiameter(172000);
-        SagittariusA.setOrbitalRadius(200000);
-        SagittariusA.setWeight(4300000);
-        SagittariusA.setCoordinateX(0);
-        SagittariusA.setCoordinateY(0);
-        SagittariusA.setRadiusOfAttraction(180000);
+        BlackHole sagittariusA = new BlackHole();
+        sagittariusA.setName("Sagittarius A");
+        sagittariusA.setId("SRGAJ2000.0");
+        sagittariusA.setDiameter(172000);
+        sagittariusA.setOrbitalRadius(200000);
+        sagittariusA.setWeight(4300000);
+        sagittariusA.setCoordinateX(0);
+        sagittariusA.setCoordinateY(0);
+        sagittariusA.setRadiusOfAttraction(180000);
         ArrayList<SpaceObject> blackHoleSatellites = new ArrayList<SpaceObject>();
         Random random = new Random();
         for (int i = 0; i < random.nextInt(RANDOM_LIMIT); i++) {
@@ -36,7 +36,24 @@ public class Runneble {
             star.setListOfSatellites(starSatellites);
             blackHoleSatellites.add(star);
         }
-        SagittariusA.setListOfSatellites(blackHoleSatellites);
-        System.out.println(SagittariusA);
+        sagittariusA.setListOfSatellites(blackHoleSatellites);
+        System.out.println(sagittariusA);
+        for(int g = 0; g < blackHoleSatellites.size(); g++) {
+            if (blackHoleSatellites.get(g).getListOfSatellites() != null) {
+                for (int m = 0; m < blackHoleSatellites.get(g).getListOfSatellites().size(); m++) {
+                    if (blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites() != null) {
+                        for (int n = 0; n < blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites().size(); n++) {
+                            blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites().get(n).toOrbiting();
+                        }
+                    }
+                    else {
+                    }
+                }
+                else{
+                }
+            }
+        }
+
+        }
+
     }
-}
