@@ -38,22 +38,22 @@ public class Runneble {
         }
         sagittariusA.setListOfSatellites(blackHoleSatellites);
         System.out.println(sagittariusA);
-        for(int g = 0; g < blackHoleSatellites.size(); g++) {
+        for (int g = 0; g < blackHoleSatellites.size(); g++) {
+            blackHoleSatellites.get(g).toOrbiting();
             if (blackHoleSatellites.get(g).getListOfSatellites() != null) {
                 for (int m = 0; m < blackHoleSatellites.get(g).getListOfSatellites().size(); m++) {
+                    blackHoleSatellites.get(g).getListOfSatellites().get(m).toOrbiting();
                     if (blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites() != null) {
                         for (int n = 0; n < blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites().size(); n++) {
                             blackHoleSatellites.get(g).getListOfSatellites().get(m).getListOfSatellites().get(n).toOrbiting();
                         }
                     }
-                    else {
-                    }
-                }
-                else{
                 }
             }
         }
-
-        }
+        System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+        System.out.println(sagittariusA);
 
     }
+
+}
